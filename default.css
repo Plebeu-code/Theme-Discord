@@ -266,10 +266,10 @@ div[class*="clickable-"][aria-expanded] > header {
 /* Outer containers */
 
 body {
-  background-image: var(--background-image);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: var(--background-image) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 #app-mount {
