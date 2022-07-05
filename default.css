@@ -116,15 +116,31 @@ div[class*="typeWindows-"] > div[role="button"] {
 }
 
 div[class*="typeWindows-"]::after {
-  content: "Discord Flame.out";
+  content: "Discord";
   font-weight: 5000;
   line-height: 31px;
   color: var(--text-muted);
   font-size: 14px;
   position: absolute;
   padding: 0 12px;
-  top: 0;
+  top: 1px;
   left: 0;
+  width: 100%;
+  height: 30px;
+  background: rgba(var(--black), 0.85);
+  z-index: -1;
+}
+
+div[class*="typeWindows-"]::before {
+  content: "Flame.out";
+  font-weight: 5000;
+  line-height: 31px;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  padding: 0 12px;
+  top: 1px;
+  left: 10px;
   width: 100%;
   height: 30px;
   background: rgba(var(--black), 0.85);
