@@ -1,8 +1,3 @@
-/* 
- * Yes, this codebase is near unreadable. Why?
- * I designed this mainly as a test to see how viable avoidance of straight out class selectors would be.
- * The codebase was never designed to be pretty, it was designed to require as little maintenance as possible.
- */
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
@@ -104,6 +99,8 @@ div[class*="typeWindows-"] {
   --background-modifier-hover: rgba(var(--white), 0.05);
   --background-modifier-active: rgba(var(--white), 0.075);
   height: 26px;
+
+
 }
 
 div[class*="typeWindows-"] > div:first-child {
@@ -132,19 +129,19 @@ div[class*="typeWindows-"]::after {
 }
 
 div[class*="typeWindows-"]::before {
-  content: "Flame.outt";
+  content: "Flame.out";
   font-weight: 5000;
   line-height: 31px;
-  color: #fff;
+  color: rgb(255, 220, 20);
   font-size: 14px;
   position: absolute;
   padding: 0 12px;
   top: 1px;
-  left: 10px;
-  width: 100%;
+  left: 80px;
+  width: 0%;
   height: 30px;
   background: rgba(var(--black), 0.85);
-  z-index: -1;
+  z-index: 1;
 }
 
 /* Guilds */
@@ -156,6 +153,7 @@ ul[data-list-id="guildsnav"] {
   background-color: rgba(var(--black), 0.6);
   border-right: 1px solid rgba(var(--black), 0.2);
   box-shadow: inset -10px 0px 20px -10px rgba(var(--black), 0.3);
+  
 }
 
 ul[data-list-id="guildsnav"] ::-webkit-scrollbar {
@@ -186,6 +184,8 @@ ul[data-list-id="guildsnav"] [class^="pill-"] span {
   [class^="pill-"]
   span[style^="opacity: 1; height: 40"] {
   --header-primary: rgba(var(--accent), 1);
+
+  
 }
 
 span[class^="expandedFolderBackground-"] {
@@ -193,6 +193,8 @@ span[class^="expandedFolderBackground-"] {
   border-radius: 14px;
   width: 40px;
   left: 16px;
+
+  
 }
 
 .wrapper-28eC3z,
@@ -200,6 +202,8 @@ span[class^="expandedFolderBackground-"] {
 [data-list-id="guildsnav"] svg[width="48"] {
   width: 40px;
   height: 40px;
+
+  
 }
 
 div[data-list-item-id="guildsnav___home"] {
@@ -234,12 +238,15 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 
 .platform-win [class^="sidebar-"] {
   border-radius: 0;
+  
 }
 
 div[class^="sidebar-"] nav,
 #private-channels {
   background-color: transparent;
   --background-tertiary: rgba(var(--black), 0.35);
+
+  
 }
 
 div[class^="sidebar-"] > nav > div[class^="searchBar"] {
@@ -277,11 +284,13 @@ div[class*="clickable-"][aria-expanded] > header {
   height: 54px;
   --background-accent: rgba(var(--accent), 1);
   --background-modifier-hover: rgba(var(--black), 0.25);
+
+  
 }
 
 /* Outer containers */
 
-body {
+.bg-1QIAus {
   background-image: var(--background-image) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -296,23 +305,23 @@ body {
   background-position: center !important;
   --background-tertiary: transparent;
   --background-secondary: transparent;
+  
 }
 
 #app-mount > div[class^="app-"] {
-  background-image: var(--background-image) !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
   --background-tertiary: transparent;
   --background-secondary: rgba(var(--black), 0.7);
   background-color: rgba(var(--black), 0.4);
+  
 }
 
 nav + div [class^="sidebar-"],
 nav + div[class^="base-"] {
+  
   overflow: visible !important;
   position: relative;
   max-width: calc(100% - 72px);
+  
 }
 
 nav + div[class^="base-"] > div[class^="notice"] {
@@ -323,6 +332,7 @@ div[class^="base-"] > div {
   --background-secondary: rgba(var(--black), 0.7);
   --background-tertiary: rgba(var(--white), 0.05);
   --background-primary: rgba(var(--black), 0.8);
+  
 }
 
 #app-mount > div:not([class^="app-"]),
@@ -331,6 +341,7 @@ div[class^="base-"] > div {
   --background-secondary: var(--background-solid-dark);
   --background-secondary-alt: var(--background-solid-darker);
   --background-tertiary: var(--background-solid-darker);
+  
 }
 
 /* Header */
@@ -339,6 +350,9 @@ section[class*="themed-"] {
   height: 54px;
   box-shadow: var(--elevation-low);
   --background-secondary: rgba(var(--white), 0.1);
+
+  
+  
 }
 
 section>div>a[href="https:https://support.discord.com"]
@@ -349,6 +363,8 @@ section>div>a[href="https:https://support.discord.com"]
 section[class*="themed-"]::before,
 section[class*="themed-"] ::after {
   content: none;
+  
+  
 }
 
 section div[class^="toolbar"] > div[role] {
@@ -360,22 +376,24 @@ section div[class^="toolbar"] > div[role] {
   border-radius: 3px;
   width: 28px;
   height: 28px;
+  
 }
 
 section div[class^="toolbar"] > div[role] svg {
   width: 22px;
+  
 }
 
 section div[class^="toolbar"] > div[role][class*="selected-"] {
   background-color: rgba(var(--white), 0.1);
+  
+  
 }
 
 /* Panels */
 
 div[class^="sidebar-"] > section {
-  --background-primary: rgba(var(--white), 0.07);
-  --background-secondary: rgba(var(--white), 0.1);
-  --background-secondary-alt: rgba(var(--black), 0.95);
+  
   margin-bottom: 70px;
 }
 
@@ -388,30 +406,39 @@ div[class^="sidebar-"] > section > div:last-child {
   position: absolute;
   left: -72px;
   bottom: 0;
+  
 }
 
 /* Content */
 
 div[class^="chat"] {
   --background-floating: rgba(var(--black), 0.5);
+  
 }
 
 div[class^="container-"][id^="chat-messages-"] {
   --background-modifier-hover: var(--background-solid-dark);
+  
 }
 
 div[class^="chat"] main form {
   margin-top: 0;
+  
+  
 }
 
 div[class^="chat"] main form::before {
   content: none;
+  
+  
 }
 
 div[data-list-id="chat-messages"] {
   --background-primary: transparent;
   --background-secondary: rgba(var(--white), 0.05);
   --background-accent: rgba(var(--white), 0.1);
+
+  
 }
 
 div[class^="channelTextArea-"] {
@@ -421,35 +448,48 @@ div[class^="channelTextArea-"] {
   margin-bottom: 24px;
   margin-top: 12px;
   border-radius: 5px;
+  
 }
 
 div[id^="chat-messages-"] + div:not([id]):last-child {
   height: 8px;
+
+  
 }
 
 div[id^="chat-messages-"][class*="cozy-"] {
   padding-left: calc(var(--avatar-size) * 2);
+
+  
 }
 
 div[id^="chat-messages-"] {
   margin-left: 8px;
   margin-right: 8px;
   border-radius: 4px;
+
+  
 }
 
 div[id^="chat-messages-"] > div[class^="buttonContainer-"] {
   transform: scale(0.85);
   top: 1px;
+
+  
 }
 
 div[id^="chat-messages-"] {
   --background-primary: rgba(var(--black), 0.5);
+
+  
 }
 
 div[id^="chat-messages-"] > div > [class^="avatar-"] {
   margin-top: 6px;
   width: var(--avatar-size);
   height: var(--avatar-size);
+
+  
 }
 
 div[id^="chat-messages-"][class*="cozy-"] div::before {
@@ -462,6 +502,7 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
   background-color: rgba(var(--accent), 0.3);
   padding: 3px 5px;
   border-radius: 5px;
+  
 }
 
 .mention:hover {
@@ -470,11 +511,15 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
 
 #app-mount .container-2cd8Mz {
   background: var(--background-primary);
+
+  
 }
 
 div[class*="barBase-"] {
   padding-bottom: 0;
   background-color: rgba(var(--accent-alt), 0.9);
+
+  
 }
 
 /* Codeblocks */
@@ -483,6 +528,8 @@ html pre {
   border-radius: 0;
   background: transparent;
   border-color: rgba(255, 255, 255, 0.1);
+
+  
 }
 
 pre code.hljs {
@@ -490,6 +537,7 @@ pre code.hljs {
   background-color: rgba(var(--white), 0.1);
   color: rgba(var(--white), 0.7);
   padding: 1em;
+  
 }
 
 html code.inline,
@@ -498,6 +546,8 @@ html code.inline {
   color: rgba(var(--white), 0.7);
   padding: 0.3em 0.6em;
   border-radius: 3px;
+
+  
 }
 
 /* Settings */
@@ -506,10 +556,14 @@ div[aria-label*="_SETTINGS"],
 div[aria-label*="_DEBUG"] {
   --background-primary: transparent;
   --background-secondary: rgba(var(--black), 0.7);
+
+  
 }
 
 div[class^="sidebarRegionScroller-"] > nav {
   --background-secondary: transparent;
+
+  
 }
 
 div[class^="contentRegion-"] {
@@ -546,6 +600,9 @@ nav > div[role="tablist"],
   --background-modifier-hover: rgba(var(--white), 0.05);
   --background-modifier-active: rgba(var(--white), 0.075);
   --background-modifier-selected: rgba(var(--accent), 0.25);
+
+  
+  
 }
 
 /* Server Discovery */
@@ -553,12 +610,16 @@ nav > div[role="tablist"],
 div[class^="sidebar"] + [class^="pageWrapper"] {
   --background-secondary: rgba(var(--black), 0.8);
   background-color: var(--background-secondary);
+
+  
 }
 
 /* Crash Page */
 
 div[class*="errorPage"] {
   --background-secondary: rgba(var(--black), 0.7) !important;
+
+
 }
 
 /* Tooltips */
@@ -566,6 +627,7 @@ div[class*="errorPage"] {
 div[class^="tooltip-"] {
   --background-floating: rgba(var(--accent-alt), 1);
   --text-normal: #e0e0e0;
+  
 }
 
 /* Buttons */
@@ -573,6 +635,7 @@ div[class^="tooltip-"] {
 button[class*="button-"][class*="color"],
 .bd-button {
   --vaccentcolor: var(--accent-alt);
+  
 }
 
 .bd-button {
@@ -583,10 +646,12 @@ button[class*="button-"][class*="color"],
 
 div[role="menuitem"] {
   --vaccentcolor: var(--accent-alt);
+  
 }
 
 div[role="menuitem"]:active {
   --vaccentcolor: var(--accent);
+  
 }
 
 /* Depreceated Components */
@@ -597,6 +662,8 @@ div[role="menuitem"]:active {
 #app-mount .footer-3mqk7D {
   background-color: var(--background-secondary);
   box-shadow: none;
+
+  
 }
 
 #app-mount .root-1gCeng,
@@ -608,6 +675,7 @@ div[role="menuitem"]:active {
 #app-mount .contentWrapper-3WC1ID,
 #app-mount .contentWarningPopout-n5JsIs {
   background-color: var(--background-primary);
+  
 }
 
 #app-mount .codeRedemptionRedirect-1wVR4b,
@@ -615,6 +683,8 @@ div[role="menuitem"]:active {
 #app-mount .inset-3sAvek {
   background-color: var(--background-tertiary);
   border: none;
+
+  
 }
 
 #app-mount .paymentPane-3bwJ6A,
@@ -637,6 +707,7 @@ div[role="menuitem"]:active {
 .videoWrapper-2v09vt,
 #app-mount .spoilerText-3p6IlD.hidden-HHr2R9 {
   background-color: var(--background-solid);
+  
 }
 
 #app-mount .expandedInfo-3kfShd,
@@ -646,16 +717,20 @@ div[role="menuitem"]:active {
 #app-mount .focused-2bY0OD,
 .colorable-1bkp8v.primaryDark-3mSFDl:hover {
   background-color: var(--background-solid-dark);
+  
 }
 
 #app-mount .payment-xT17Mq {
   background-color: transparent;
   border-bottom-color: rgba(var(--white), 0.025);
+
+  
 }
 
 #app-mount .bottomDivider-1K9Gao,
 #app-mount .focused-2bY0OD {
   border-bottom-color: var(--background-solid-dark);
+  
 }
 
 #app-mount div[data-list-id="billing-history"],
@@ -667,6 +742,8 @@ div[role="menuitem"]:active {
 .react-datepicker__day--outside-month,
 .react-datepicker__day--disabled {
   background-color: transparent !important;
+
+
 }
 
 .react-datepicker__day--disabled {
@@ -676,11 +753,14 @@ div[role="menuitem"]:active {
 #app-mount .react-datepicker__day {
   border-top-color: var(--background-secondary);
   border-left-color: var(--background-secondary);
+
+  
 }
 
 #app-mount .background-3xPPFc,
 #app-mount .tierInProgress-3mBoXq {
   color: var(--background-solid);
+  
 }
 
 .option-96V44q:after {
@@ -693,11 +773,13 @@ div[role="menuitem"]:active {
 #app-mount .outer-1AjyKL.active-1xchHY,
 #app-mount .outer-1AjyKL.interactive-3B9GmY:hover {
   background-color: var(--background-modifier-hover);
+  
 }
 
 .css-3vaxre-menu,
 .tierMarker-5HkGJ_[style] {
   border-color: rgba(var(--white), 0.025) !important;
+  
 }
 
 #app-mount .searchAnswer-3Dz2-q,
@@ -706,20 +788,24 @@ div[role="menuitem"]:active {
 #app-mount .pill-2pQByF {
   background-color: rgba(var(--accent-alt), 1);
   color: #fff;
+  
 }
 
 #app-mount .keybindShortcut-1BD6Z1 span {
   background: var(--background-solid-dark);
   box-shadow: inset 0 -4px 0 var(--background-solid-darker);
+  
 }
 
 #app-mount .perksModal-fSYqOq {
   background: rgba(var(--black), 0.7);
+  
 }
 
 #app-mount .card-FDVird:before {
   background: var(--background-modifier-hover);
   border: none;
+  
 }
 
 /* Login Page */
@@ -727,6 +813,7 @@ div[role="menuitem"]:active {
 div[class^="splashBackground"] canvas,
 div[class^="splashBackground"] img {
   display: none;
+  
 }
 
 /* USRBG */
@@ -754,10 +841,13 @@ div[class^="splashBackground"] img {
   background-repeat: no-repeat;
   background-position: var(--user-popout-position, center) center;
   background-image: var(--user-background);
+
+  
 }
 
 .userPopout-3XzG_A[style*="-user-"] .profileBanner-33-uE1 {
   height: var(--USRBG-banner-height, 120px);
+  
 }
 
 .userPopout-3XzG_A[style*="-user-"] .avatarWrapperNormal-2tu8Ts {
@@ -782,4 +872,5 @@ div[class^="splashBackground"] img {
   background-repeat: no-repeat;
   background-position: var(--user-popout-position, center) center;
   background-image: var(--user-background);
+  
 }
