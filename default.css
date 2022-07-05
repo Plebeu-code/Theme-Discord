@@ -290,11 +290,19 @@ body {
 
 #app-mount {
   background-color: transparent;
+  background-image: var(--background-image) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
   --background-tertiary: transparent;
   --background-secondary: transparent;
 }
 
 #app-mount > div[class^="app-"] {
+  background-image: var(--background-image) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
   --background-tertiary: transparent;
   --background-secondary: rgba(var(--black), 0.7);
   background-color: rgba(var(--black), 0.4);
