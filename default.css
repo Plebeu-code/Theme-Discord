@@ -132,7 +132,7 @@ div[class*="typeWindows-"]::after {
 }
 
 div[class*="typeWindows-"]::before {
-  content: "Flame.out";
+  content: "Flame.outt";
   font-weight: 5000;
   line-height: 31px;
   color: #fff;
