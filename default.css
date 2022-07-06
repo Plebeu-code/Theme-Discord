@@ -35,6 +35,10 @@ button {
   --accentcolor: var(--accent);
   --vaccentcolor-hover: rgb(var(--accent));
   --vaccentcolor-active: rgb(var(--accent));
+  --close-button-color: #e92a2ade;
+  --maximize-button-color: #f7bc1bde;
+  --minimize-button-color: #12db33de;
+  --button-position: row;
 }
 
 .theme-dark,
@@ -795,4 +799,51 @@ div[class^="splashBackground"] img {
   background-repeat: no-repeat;
   background-position: var(--user-popout-position, center) center;
   background-image: var(--user-background);
+}
+
+
+/* Mac Like Titlebar */
+.withFrame-2dL45i {
+  margin: 0;
+  height: 24px;
+}
+
+.withFrame-2dL45i .winButton-3UMjdg:hover {
+  background-color: transparent;
+}
+
+.withFrame-2dL45i .winButton-3UMjdg > svg {
+  display: none;
+}
+
+.withFrame-2dL45i .winButton-3UMjdg {
+  pointer-events: none;
+  margin-left: -4px;
+  top: 0;
+}
+.withFrame-2dL45i .winButton-3UMjdg::after {
+  content: "";
+  padding: 7px;
+  border-radius: 50px;
+  pointer-events: fill;
+  transition-duration: 200ms;
+}
+.withFrame-2dL45i .winButtonClose-3Q8ZH5::after {
+  background-color: var(--close-button-color) !important;
+  margin-top: 0px;
+  z-index: 2;
+}
+.withFrame-2dL45i .winButtonMinMax-3RsPUg:nth-child(3)::after {
+  background-color: var(--maximize-button-color) !important;
+  margin-top: 0px;
+  z-index: 2;
+
+}
+.withFrame-2dL45i .winButtonMinMax-3RsPUg:nth-child(4):after {
+  background-color: var(--minimize-button-color) !important;
+  margin-top: 0px;
+  z-index: 2;
+}
+.typeWindows-2-g3UY > div:hover::after {
+  transform: scale(1.1);
 }
