@@ -1,3 +1,10 @@
+/**
+ * @name Flame Theme
+ * @version 1
+ * @description Flame.out.
+ * @source https://plebeu-code.github.io/Theme-Discord
+*/
+
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
@@ -14,7 +21,7 @@ button {
   --font-display: var(--font-primary) !important;
   /* Dark Matter Variables */
   --avatar-size: 32px;
-  --background-image: url("https://i.imgur.com/7SbtKvw.png");
+  --background-image: url("https://media.discordapp.net/attachments/560251522127101972/993988221493067957/teahub.io-multi-screen-wallpaper-323295.jpg?width=1753&height=701");
   --home-image: url("https://i.imgur.com/233d55Y.gif");
   --background-solid: #161921;
   --background-solid-dark: #101218;
@@ -129,7 +136,7 @@ div[class*="typeWindows-"]::after {
 }
 
 div[class*="typeWindows-"]::before {
-  content: "Flame.out";
+  content: "";
   font-weight: 5000;
   line-height: 31px;
   color: rgb(255, 220, 20);
@@ -138,9 +145,14 @@ div[class*="typeWindows-"]::before {
   padding: 0 12px;
   top: 1px;
   left: 80px;
-  width: 0%;
+  width: 100%;
   height: 30px;
-  background: rgba(var(--black), 0.85);
+  pointer-events: none;
+  background: rgba(var(--black), 0.55);
+  background-image: url("https://cdn.discordapp.com/attachments/560251522127101972/994326876938047588/standard_10.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
   z-index: 1;
 }
 
