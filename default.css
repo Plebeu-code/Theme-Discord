@@ -2,6 +2,7 @@
  * @name Flame Theme
  * @version 1
  * @description Flame.out.
+ * @author       Plebeu
  * @source https://plebeu-code.github.io/Theme-Discord
 */
 
@@ -21,8 +22,9 @@ button {
   --font-display: var(--font-primary) !important;
   /* Dark Matter Variables */
   --avatar-size: 32px;
-  --background-image: url("https://media.discordapp.net/attachments/560251522127101972/993988221493067957/teahub.io-multi-screen-wallpaper-323295.jpg?width=1753&height=701");
+  --background-image: url("https://b-static.besthdwallpaper.com/anime-demon-girl-masked-warrior-wallpaper-2800x2100-90517_28.jpg");
   --home-image: url("https://i.imgur.com/233d55Y.gif");
+  --content-logo-top: url("https://media.discordapp.net/attachments/801998947195158588/987100443769458740/standard_7.gif");
   --background-solid: #161921;
   --background-solid-dark: #101218;
   --background-solid-darker: #0c0e12;
@@ -135,6 +137,10 @@ div[class*="typeWindows-"]::after {
   z-index: -1;
 }
 
+.themed-Hp1KC_  {
+  background: transparent !important;
+}
+
 div[class*="typeWindows-"]::before {
   content: "";
   font-weight: 5000;
@@ -149,7 +155,7 @@ div[class*="typeWindows-"]::before {
   height: 35px;
   pointer-events: none;
   background: rgba(var(--black), 0.55);
-  background-image: url("https://media.discordapp.net/attachments/801998947195158588/987100443769458740/standard_7.gif");
+  background-image: var(--content-logo-top);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
